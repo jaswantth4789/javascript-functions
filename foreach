@@ -1,0 +1,13 @@
+function customForEach(arr, callback) {
+  
+  for (var i = 0; i < arr.length; i++) {
+    
+    callback(arr[i], i, arr);
+  }
+}
+
+var numbers = [-3,0,2,4,6,7];
+
+customForEach(numbers, function (num) {
+  console.log(num);
+});
